@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+     *{box-sizing: border-box;}
+.frm{
+  align-items: center;
+
+}
+
+input[type=text], input[type=password]{
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+input[type=text],input[type=password]:focus{
+  background-color: #ddd;
+  outline-color: rgb(2, 54, 26);
+}
+
+.container{
+  background-color: rgb(159, 184, 197);
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+}
+a   {color: red;}
+
+form {
+margin: 0 auto;
+width:250px;
+}
+
+button {
+  background-color: #055a05;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.resetbtn{
+  padding: 14px 20px;
+  background-color: #e23241;
+}
+
+
+.resetbtn, .login {
+  float: left;
+  width: 50%;
+}
+
+.sign{
+  color:red;
+}
+.sign:hover{
+  color: red;
+  font-size: 15px;
+}
+  </style>
+</head>
+<body>
+<form class="frm">
+  <div class="container">
+  <h4> WELCOME TO JAPHETH TECHNOLOGIES</h4>
+  <hr>
+    <label>
+        <input type="text" id="Email address" name="Email" placeholder="ENTER EMAIL ADDRESS"><br>
+    </label><br>
+  <br>
+  <label>
+  <input type="password" id="password" name="password" placeholder="ENTER PASSWORD"><br>
+</label><br>
+<button type="button" class="resetbtn">Forgot password</button>
+ <button type="button"  class="login">Login</button>
+<p> Don't have an account?<a href="signup.html" class="sign">register here!</a></p>
+</div>
+<!--
+<p> Are you an agent? <input type="submit" value="click here" class="bnt">
+-->
+</form>
+</body>
+
+</html>
